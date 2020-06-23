@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% url 'home' as home_url %}
+{% url 'products:list' as product_list_url %}
+{% url 'contact' as contact_url %}
+{% url 'logout' as logout_url %}
+{% url 'register' as register_url %}
+{% url 'login' as login_url %}
+{% url 'carts:home' as cart_url %}
+{% load static %}
+
+{% block body %}
+    
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to Real Real Shop</h1>
+  <h3>{{ title }}</h3>
+  <p class="lead">A whole old experience for eCommerce. <br> We are making the world the same place</p>
+  <hr class="my-4">
+  <p>Why don't you check us out and see how boring it is!</p>
+  <a class="btn btn-primary btn-lg" href="{{ product_list_url }}">See what's new</a>
+</div>
+    {% comment %} <img src='{% static "img/AMAZON.png" %}' class='img-fluid'/> {% endcomment %}
+
+
+    
+{% endblock %}

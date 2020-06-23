@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h1>Log Out</h1>
+    <p>The details go here</p>
+    <form method='post'>
+        {% csrf_token%}
+        {{form.as_p}}
+        <button>Log Out</button>
+    </form>
+{% endblock %}

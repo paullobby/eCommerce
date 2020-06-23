@@ -1,0 +1,86 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "T-shirt",
+        "slug": "t-shirt",
+        "description": "This is an item. Buy!",
+        "price": "39.99",
+        "image": "upload_image_path/marvel-color-logo-t-shirt-for-men.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-06-16T02:54:59.746Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "Hat",
+        "slug": "hat",
+        "description": "This is a hat!",
+        "price": "39.99",
+        "image": "products/hat_Ac6oe5M.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-06-16T02:54:59.746Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Apple 2020\u65b0\u6b3e MacBook Pro 13.3",
+        "slug": "computer",
+        "description": "Apple 2020\u65b0\u6b3e MacBook Pro 13.3\u3010\u5e26\u89e6\u63a7\u680f\u3011\u5341\u4ee3i5 16G 512G 2.0GHz \u6df1\u7a7a\u7070 \u7b14\u8bb0\u672c\u7535\u8111 \u8f7b\u8584\u672c MWP42CH/A",
+        "price": "999.99",
+        "image": "upload_image_path/mac.jpeg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-06-16T02:54:59.746Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "black-t-shirt",
+        "slug": "black-t",
+        "description": "this is a black t shirt. \r\nBoth patterns use nested arguments and will resolve: for example, blog/page-2/ will result in a match to blog_articles with two positional arguments: page-2/ and 2. The second pattern for comments will match comments/page-2/ with keyword argument page_number set to 2. The outer argument in this case is a non-capturing argument (?:...).\r\n\r\nThe blog_articles view needs the outermost captured argument to be reversed, page-2/ or no arguments in this case, while comments can be reversed with either no arguments or a value for page_number.\r\n\r\nNested captured arguments create a strong coupling between the view arguments and the URL as illustrated by blog_articles: the view receives part of the URL (page-2/) instead of only the value the view is interested in. This coupling is even more pronounced when reversing, since to reverse the view we need to pass the piece of URL instead of the page number.\r\n\r\nAs a rule of thumb, only capture the values the view needs to work with and use non-capturing arguments when the regular expression needs an argument but the view ignores it.",
+        "price": "39.99",
+        "image": "upload_image_path/bt.jpeg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-06-16T02:54:59.746Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "iPhone 11",
+        "slug": "abc",
+        "description": "Meet iPhone 11. A new dual\u2011camera system captures more of what you see and love. The fastest chip ever in a smartphone and all\u2011day battery life let you do more and charge less. And the highest\u2011quality video in a smartphone, so your memories look better than ever.",
+        "price": "1099.99",
+        "image": "upload_image_path/iphone.jpeg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-06-22T16:40:47.747Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "title": "iPad Pro",
+        "slug": "ipad_pro",
+        "description": "Your next computer is not a computer. \r\n12.9\u201d and 11\u201d\r\nLiquid Retina display\r\nwith ProMotion\r\nA12Z Bionic chip\r\nPro cameras and LiDAR Scanner\r\nFace ID\r\nUp to 1TB storage\r\nSupport for Apple Pencil\r\n(2nd generation)\r\nSupport for Magic Keyboard and Smart Keyboard Folio",
+        "price": "799.00",
+        "image": "upload_image_path/iPadPro.jpg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-06-22T16:42:38.916Z"
+    }
+}
+]

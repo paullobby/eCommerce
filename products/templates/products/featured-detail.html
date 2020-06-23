@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+<h1>This is Product Detail page</h1>
+<h3>e-commerce</h3>
+
+{{ object.title}} <br/>
+{{ object.description}} <br/>
+{% if object.image %}
+    <img src='{{ object.image.url}}' class='img-fluid'>' <br/>
+{% endif %}
+
+{% endblock %}

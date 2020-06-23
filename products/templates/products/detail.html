@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+<h1>This is Product Detail page</h1>
+<div class='row'>
+    <div class='col-12 col-md-6'>
+        <h1>{{ object.title}}</h1> <br/>
+        <h3>劲爆价: </h3>
+        <p style='color:red'>${{ object.price}} </p>
+        Published {{ object.timestamp | timesince }} ago
+        {{ object.description | linebreaks}} <br/>
+        {% if object.image %}
+            <img src='{{ object.image.url}}' class='img-fluid'>' <br/>
+        {% endif %}
+    </div>
+    <div class='col-12 col-md-6'>
+        {% include 'products/snippets/update-cart.html' with product=object carts=carts %}
+    </div>
+</div>
+{% endblock %}
