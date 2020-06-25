@@ -29,6 +29,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
+    path('analytics/', views.analytics, name='analytics'),
     path('accounts/', include('accounts.urls')),
     #path('register/guest/', guest_register_view, name='guest_url'),
     path('checkout/address/create', checkout_address_create_view, name='checkout_address_create'),

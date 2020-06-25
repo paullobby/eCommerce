@@ -6,9 +6,9 @@ include/
 pip-selfcheck.json
 
 # Django related 
-ecommerce/settings/local.py
+#ecommerce/settings/local.py
 # src/<yourproject>/settings/local.py
-# static-cdn/  # any collected static files 
+static-cdn/  # any collected static files 
 
 
 # Byte-compiled / optimized / DLL files

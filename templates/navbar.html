@@ -5,6 +5,7 @@
 {% url 'register' as register_url %}
 {% url 'login' as login_url %}
 {% url 'carts:home' as cart_url %}
+{% url 'analytics' as analytics_url %}
 {% load static %}
 
 
@@ -43,6 +44,9 @@
                       </li> -->
                       <li class="nav-item {% if request.path == contact_url %} active {% endif %}">
                         <a class="nav-link" href="{{ contact_url }}">Contact</a>
+                    </li>
+                    <li class="nav-item {% if request.path == contact_url %} active {% endif %}">
+                        <a class="nav-link" href="{{ analytics_url }}">Analytics</a>
                     </li>
             </ul>
 

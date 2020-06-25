@@ -16,6 +16,13 @@ def about(request):
     }
     return render (request, 'about.html', context)
 
+def analytics(request):
+    context = {
+        "title":"Analytics Page",
+        "content":" Welcome to the analytics page."
+    }
+    return render (request, 'analytics/view.html', context)
+
 
 def contact(request):
     contact_form = ContactForm(request.POST or None)
