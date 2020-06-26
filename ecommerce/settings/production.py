@@ -25,7 +25,7 @@ SECRET_KEY = 'exfnt_5b2fob6pa2y%!z6$c=-vksohv7fxlmj*js1(w#5yt)n8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['.herokuapp.com' , '3.134.88.168', 'www.greencommercenow.com','greencommercenow.com']
 
 
 # Application definition
