@@ -21,6 +21,7 @@ from django.urls import path, include
 from addresses.views import checkout_address_create_view, checkout_address_reuse_view
 from carts.views import cart_detail_api_view
 from accounts.views import guest_register_view
+from analytics.views import SalesView, SalesAjaxView
 
 from . import views
 
@@ -30,6 +31,8 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('analytics/', views.analytics, name='analytics'),
+    path('analytics/sales/', SalesView.as_view(), name='sales-analytics'),
+    path('analytics/sales/data/', SalesAjaxView.as_view(), name='sales-analytics-data'),
     path('accounts/', include('accounts.urls')),
     #path('register/guest/', guest_register_view, name='guest_url'),
     path('checkout/address/create', checkout_address_create_view, name='checkout_address_create'),
